@@ -1,0 +1,16 @@
+[
+{
+  "modid": "tinycreatures",
+  "name": "Tiny Creatures",
+  "description": "A minecraft forge mod which adds diseases, microorganisms, and bio-engineering to the game.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://github.com/sshockwave/TinyCreatures/wiki",
+  "updateUrl": "https://github.com/sshockwave/TinyCreatures/tags",
+  "authorList": ["sshockwave"],
+  "credits": "The idea from Mansker",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
