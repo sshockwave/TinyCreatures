@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import static net.sshockwave.tinycreatures.Registry.*;
 
 /**
  * @author sshockwave
@@ -17,13 +18,20 @@ public class CommonProxy {
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
         proxy.preInit(event);
-
+        registerBlocks();
+        registerItems();
+        registerFuelHandlers();
+        registerTileEntities();
+        registerWorldGenerators();
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
         proxy.init(event);
-
+        addShapedRecipes();
+        addShapelessRecipes();
+        addSmeltings();
+        addSubstitutionAliases();
     }
 
     @EventHandler
