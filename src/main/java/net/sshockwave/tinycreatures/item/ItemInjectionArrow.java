@@ -20,6 +20,7 @@ public class ItemInjectionArrow extends ItemArrow{
 
     private ItemInjectionArrow() {
         this.setUnlocalizedName("injectionArrow");
+        this.setRegistryName("injection_arrow");
         this.setCreativeTab(CreativeTabs.COMBAT);
     }
 

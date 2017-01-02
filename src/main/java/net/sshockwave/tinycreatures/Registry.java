@@ -3,7 +3,6 @@ package net.sshockwave.tinycreatures;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.sshockwave.tinycreatures.item.*;
-import net.sshockwave.tinycreatures.block.*;
 import static net.minecraftforge.fml.common.registry.GameRegistry.*;
 
 /**
