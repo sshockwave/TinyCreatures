@@ -1,6 +1,7 @@
-package net.sshockwave.tinycreatures;
+package net.sshockwave.tinycreatures.init;
 
 import static net.minecraftforge.fml.common.registry.GameRegistry.*;
+import net.sshockwave.tinycreatures.init.*;
 
 /**
  * @author sshockwave
