@@ -1,5 +1,7 @@
 package net.sshockwave.tinycreatures;
 
+import net.sshockwave.tinycreatures.item.*;
+import net.sshockwave.tinycreatures.block.*;
 import static net.minecraftforge.fml.common.registry.GameRegistry.*;
 
 /**
@@ -12,7 +14,7 @@ public class Registry {
     }
 
     public static void registerItems(){
-
+        register(ItemInjectionArrow.getInstance());
     }
 
     public static void registerWorldGenerators(){
