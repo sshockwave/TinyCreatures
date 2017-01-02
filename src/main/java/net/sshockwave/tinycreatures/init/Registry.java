@@ -1,9 +1,10 @@
-package net.sshockwave.tinycreatures;
+package net.sshockwave.tinycreatures.init;
 
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.sshockwave.tinycreatures.item.*;
 import static net.minecraftforge.fml.common.registry.GameRegistry.*;
+import net.sshockwave.tinycreatures.init.*;
 
 /**
  * @author sshockwave

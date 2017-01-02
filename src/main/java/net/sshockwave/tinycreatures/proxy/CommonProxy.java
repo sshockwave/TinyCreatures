@@ -5,7 +5,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import static net.sshockwave.tinycreatures.Registry.*;
+import static net.sshockwave.tinycreatures.init.Registry.*;
 
 /**
  * @author sshockwave
