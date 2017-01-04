@@ -9,7 +9,7 @@ import net.sshockwave.tinycreatures.init.*;
 public class Registry {
 
     public static void registerBlocks(){
-
+        register(Blocks.INCUBATOR);
     }
 
     public static void registerItems(){
