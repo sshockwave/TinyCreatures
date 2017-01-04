@@ -36,7 +36,7 @@ public class Registry {
     }
 
     public static void addShapelessRecipes(){
-        addShapelessRecipe(new ItemStack(Items.INJECTION_ARROW), Items.GLASS_BOTTLE, Items.INJECTION_ARROW);
+        addShapelessRecipe(new ItemStack(Items.INJECTION_ARROW), Items.GLASS_BOTTLE, Items.ARROW);
     }
 
     public static void addSmeltings(){
@@ -56,6 +56,8 @@ public class Registry {
     public static void registerRenders(){
         RegistryHelper.registerRender(Items.INJECTION_ARROW);
     }
+
+
 }
 
 class RegistryHelper{
