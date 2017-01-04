@@ -54,7 +54,7 @@ public class Registry {
 
     @SideOnly(Side.CLIENT)
     public static void registerRenders(){
-
+        RegistryHelper.registerRender(Blocks.INCUBATOR);
     }
 }
 
