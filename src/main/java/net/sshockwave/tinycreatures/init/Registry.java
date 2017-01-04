@@ -1,10 +1,7 @@
 package net.sshockwave.tinycreatures.init;
 
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.sshockwave.tinycreatures.item.*;
 import static net.minecraftforge.fml.common.registry.GameRegistry.*;
-import net.sshockwave.tinycreatures.init.*;
 
 /**
  * @author sshockwave
@@ -16,7 +13,7 @@ public class Registry {
     }
 
     public static void registerItems(){
-        register(ItemInjectionArrow.getInstance());
+        register(Items.INJECTION_ARROW);
     }
 
     public static void registerWorldGenerators(){
@@ -32,7 +29,7 @@ public class Registry {
     }
 
     public static void addShapelessRecipes(){
-        addShapelessRecipe(new ItemStack(ItemInjectionArrow.getInstance()), Items.GLASS_BOTTLE, ItemInjectionArrow.getInstance());
+        addShapelessRecipe(new ItemStack(Items.INJECTION_ARROW), Items.GLASS_BOTTLE, Items.INJECTION_ARROW);
     }
 
     public static void addSmeltings(){

@@ -12,13 +12,8 @@ import net.sshockwave.tinycreatures.entity.EntityInjectionArrow;
  * @author sshockwave
  */
 public class ItemInjectionArrow extends ItemArrow{
-    private static ItemInjectionArrow INSTANCE = new ItemInjectionArrow();
 
-    public static ItemInjectionArrow getInstance() {
-        return INSTANCE;
-    }
-
-    private ItemInjectionArrow() {
+    public ItemInjectionArrow() {
         this.setUnlocalizedName("injectionArrow");
         this.setRegistryName("injection_arrow");
         this.setCreativeTab(CreativeTabs.COMBAT);
