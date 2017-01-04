@@ -17,26 +17,25 @@ public class CommonProxy {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event){
-        proxy.preInit(event);
         registerBlocks();
         registerItems();
         registerFuelHandlers();
         registerTileEntities();
         registerWorldGenerators();
+        proxy.preInit(event);
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event){
-        proxy.init(event);
         addShapedRecipes();
         addShapelessRecipes();
         addSmeltings();
         addSubstitutionAliases();
+        proxy.init(event);
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event){
         proxy.postInit(event);
-
     }
 }
