@@ -1,4 +1,4 @@
-package net.sshockwave.tinycreatures.inventory;
+package net.sshockwave.tinycreatures.init;
 
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.world.World;
@@ -11,10 +11,10 @@ import javax.annotation.Nullable;
 /**
  * Created by lenovo on 2017/1/4.
  */
-public class GuiElementLoader implements IGuiHandler {
+public class GuiElements implements IGuiHandler {
     public static final int GUI_INCUBATOR = 50;
 
-    public GuiElementLoader() {
+    public GuiElements() {
         NetworkRegistry.INSTANCE.registerGuiHandler(TinyCreatures.proxy,this);
     }
 
