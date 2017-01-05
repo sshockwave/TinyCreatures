@@ -60,6 +60,7 @@ public class Registry {
 
 class RegistryHelper{
 
+    @SuppressWarnings("deprecation")
     @SideOnly(Side.CLIENT)
     public static void registerRender(Item item)
     {
@@ -67,6 +68,7 @@ class RegistryHelper{
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(name, "inventory"));
     }
 
+    @SuppressWarnings("deprecation")
     @SideOnly(Side.CLIENT)
     public static void registerRender(Block block)
     {

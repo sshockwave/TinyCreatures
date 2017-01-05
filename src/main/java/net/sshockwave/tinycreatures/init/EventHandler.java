@@ -1,4 +1,4 @@
-package net.sshockwave.tinycreatures;
+package net.sshockwave.tinycreatures.init;
 
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
