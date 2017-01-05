@@ -1,7 +1,5 @@
 package net.sshockwave.tinycreatures.init;
 
-import net.minecraft.item.ItemStack;
-import static net.minecraftforge.fml.common.registry.GameRegistry.*;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -10,6 +8,7 @@ import net.minecraftforge.fml.common.registry.GameData;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
+import static net.minecraftforge.fml.common.registry.GameRegistry.*;
 /**
  * @author sshockwave
  */
@@ -47,7 +46,6 @@ public class Registry {
 
     }
 
-
     public static void registerFuelHandlers(){
 
     }
@@ -57,23 +55,23 @@ public class Registry {
         RegistryHelper.registerRender(Items.INJECTION_ARROW);
     }
 
+    public static void registerCapabilities() {
 
+    }
 }
 
 class RegistryHelper{
 
     @SuppressWarnings("deprecation")
     @SideOnly(Side.CLIENT)
-    public static void registerRender(Item item)
-    {
+    public static void registerRender(Item item) {
         String name = GameData.getItemRegistry().getNameForObject(item).toString();
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(name, "inventory"));
     }
 
     @SuppressWarnings("deprecation")
     @SideOnly(Side.CLIENT)
-    public static void registerRender(Block block)
-    {
+    public static void registerRender(Block block) {
         Item item = Item.getItemFromBlock(block);
         String name = GameData.getBlockRegistry().getNameForObject(block).toString();
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(name, "inventory"));
