@@ -12,5 +12,7 @@ import net.sshockwave.tinycreatures.tileentity.TEIncubator;
 public class TileEntities {
     public static final TEIncubator TE_INCUBATOR = new TEIncubator();
 
-    public TileEntities(FMLPreInitializationEvent event){    }
+    private TileEntities(){
+
+    }
 }

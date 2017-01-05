@@ -25,6 +25,7 @@ public class TinyCreatures implements IProxy{
     public void preInit(FMLPreInitializationEvent event){
         registerBlocks();
         registerItems();
+        registerCapabilities();
         registerFuelHandlers();
         registerTileEntities();
         registerWorldGenerators();
